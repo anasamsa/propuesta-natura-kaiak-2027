@@ -256,6 +256,22 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
 .inc .pill{padding:24px 24px 26px}
 @media (max-width:980px){.inc{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:620px){.inc{grid-template-columns:1fr}}
+.shootday{margin-top:40px;background:var(--hero);color:#fff;border-radius:14px;padding:22px 26px;display:grid;gap:6px}
+.shootday .tk{color:var(--green-br)}
+.shootday b{font-size:clamp(20px,2.4vw,26px);font-weight:800}
+.shootday p{font-size:14px;color:#C3D0E4;max-width:70ch}
+.inc .pill ul.dots{gap:6px}
+.phases{display:grid;gap:22px;margin-top:40px}
+.phase{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.phase__h{background:var(--hero);color:#fff;padding:26px 24px;display:grid;gap:6px;align-content:start}
+.phase__h .tk{color:var(--green-br)}
+.phase__h h3{font-size:24px;font-weight:800;letter-spacing:-.01em}
+.phase__h .dur{display:inline-block;justify-self:start;margin-top:4px;padding:6px 12px;border-radius:30px;background:linear-gradient(96deg,var(--green-br),var(--blue-br));color:#0E1B34;font-size:13px;font-weight:800}
+.phase__h p{font-size:13.5px;color:#C3D0E4;line-height:1.55;margin-top:8px}
+.phase__b{padding:24px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px 30px;align-content:start}
+.grp .k{display:block;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--label);margin-bottom:4px}
+.grp .dots{margin-top:6px;gap:6px}
+@media (max-width:760px){.phase{grid-template-columns:1fr}}
 .calcs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:clamp(26px,3vw,36px)}
 .price{grid-template-columns:1fr}
 .tl{list-style:none;margin:36px 0 0;padding:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
@@ -345,7 +361,7 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
       <div class="scen__txt">
         <span class="tk">Escenario 1</span>
         <h3>Cascada en los alrededores de Bogotá</h3>
-        <p>Un día de rodaje en una cascada a menos de dos horas de Bogotá. El equipo y el embajador salen y vuelven el mismo día. La locación final se confirma en el scouting, según acceso para el equipo, permisos y luz.</p>
+        <p>Rodaje en una cascada a menos de dos horas de Bogotá y en un estudio u hotel en la ciudad. El equipo y el embajador salen y vuelven cada día. La locación final se confirma en el scouting, según acceso para el equipo, permisos y luz.</p>
                 <span class="scen__price"><span>Total</span><b class="num">$66.000.000</b></span>
       </div>
       <div class="locs">
@@ -358,7 +374,7 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
       <div class="scen__txt">
         <span class="tk">Escenario 2</span>
         <h3>Cascada en Pereira</h3>
-        <p>Un día de rodaje en el Eje Cafetero, con vegetación tropical más densa. Producción con equipo local y equipo clave desde Bogotá. Incluye viaje del embajador, hospedaje y traslado hasta la cascada.</p>
+        <p>Rodaje en el Eje Cafetero, con vegetación tropical más densa, y en un estudio u hotel de la zona. Producción con equipo local y equipo clave desde Bogotá. Incluye viaje del embajador, hospedaje y traslado hasta la cascada.</p>
         <p>El permiso de rodaje se acuerda con el lugar elegido.</p>
         <span class="scen__price"><span>Total</span><b class="num">$52.000.000</b></span>
       </div>
@@ -393,57 +409,51 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
 <section class="block block--tint">
   <div class="wide">
     <p class="seclabel">03 · Qué incluye</p>
-    <h2 class="bigt">Lo que incluye <span class="grad">la producción</span></h2>
-    <div class="inc">
-      <div class="pill"><span class="tk">Preproducción</span><ul class="dots"><li>Scouting y visita técnica</li><li>Permisos de locación</li><li>Plan de rodaje y call sheet</li><li>Propuesta de vestuario, arte, maquillaje y peinado</li><li>Guion del video a FV con Natura</li></ul></div>
-      <div class="pill"><span class="tk">Equipo humano</span><ul class="dots"><li>Director y productor de campo</li><li>Fotógrafo y asistente</li><li>Director de fotografía y asistente de cámara</li><li>Gaffer y eléctrico</li><li>Director de arte y asistente</li><li>Vestuarista, maquillador y peinador</li><li>Camarógrafo de backstage y manejo de material</li></ul></div>
-      <div class="pill"><span class="tk">Equipo técnico</span><ul class="dots"><li>Cámara de cine 4K con lentes de cine</li><li>Cámara de foto de alta resolución con lentes fijos</li><li>Estabilizador y drone</li><li>Iluminación, reflectores, difusores y banderas</li><li>Atomizadores y niebla para el rocío</li><li>Monitoreo y almacenamiento</li></ul></div>
-      <div class="pill"><span class="tk">Logística</span><ul class="dots"><li>Transporte del equipo humano y técnico</li><li>Transporte del embajador</li><li>Alimentación e hidratación</li><li>Camerino en locación</li><li>Pólizas de equipo y de accidentes</li></ul></div>
-      <div class="pill"><span class="tk">Postproducción de fotos</span><ul class="dots"><li>Selección con Natura</li><li>Retoque de las 5 fotos: piel, agua, producto y color</li><li>Archivos para revista, OOH, RRSS, digital y tiendas</li><li>Entrega del material en crudo</li></ul></div>
-      <div class="pill"><span class="tk">Postproducción de video</span><ul class="dots"><li>Edición de 3 cápsulas verticales y 2 compilados</li><li>Corrección de color</li><li>Música de librería con licencia</li><li>Diseño sonoro y mezcla</li><li>Gráficos 2D: textos en pantalla animados</li><li>Subtítulos</li></ul></div>
+    <h2 class="bigt">Lo que incluye <span class="grad">cada fase</span></h2>
+    <div class="phases">
+      <div class="phase">
+        <div class="phase__h"><span class="tk">Fase 1</span><h3>Preproducción</h3><span class="dur">3 días</span></div>
+        <div class="phase__b"><div class="grp"><span class="k">Equipo humano</span><ul class="dots"><li>Productor general</li></ul></div><div class="grp"><span class="k">Incluye</span><ul class="dots"><li>Scouting y visita técnica</li><li>Permisos de locación</li><li>Plan de rodaje y call sheet</li><li>Guion visual de los videos</li><li>Propuesta de vestuario, arte, maquillaje y peinado</li></ul></div></div>
+      </div>
+      <div class="phase">
+        <div class="phase__h"><span class="tk">Fase 2</span><h3>Producción</h3><span class="dur">Hasta 3 días de rodaje</span><p>Hasta 2 locaciones: por ejemplo, la cascada y un estudio u hotel para las fotos de aplicación y el video de backstage.</p></div>
+        <div class="phase__b"><div class="grp"><span class="k">Equipo humano</span><ul class="dots"><li>Director general</li><li>Productor de campo</li><li>Fotógrafo</li><li>Asistente de fotografía</li><li>Director de fotografía</li><li>Camarógrafo</li><li>Asistente de cámara</li><li>Gaffer</li><li>Eléctrico</li><li>Director de arte</li><li>Asistente de arte</li><li>Vestuarista</li><li>Maquillador</li><li>Peinador</li><li>Camarógrafo de backstage</li><li>Manejo de material (DIT)</li></ul></div><div class="grp"><span class="k">Equipo técnico</span><ul class="dots"><li>Cámara de cine 4K con lentes de cine</li><li>Cámara de foto de alta resolución con lentes fijos</li><li>Estabilizador y drone</li><li>Iluminación, reflectores, difusores y banderas</li><li>Atomizadores y niebla para el rocío</li><li>Monitoreo</li></ul></div><div class="grp"><span class="k">Logística</span><ul class="dots"><li>Transporte del equipo humano y técnico</li><li>Transporte del embajador</li><li>Alimentación e hidratación</li><li>Almacenamiento y respaldo del material</li></ul></div></div>
+      </div>
+      <div class="phase">
+        <div class="phase__h"><span class="tk">Fase 3</span><h3>Postproducción</h3><span class="dur">5 días hábiles</span></div>
+        <div class="phase__b"><div class="grp"><span class="k">Fotos</span><ul class="dots"><li>Selección con Natura</li><li>Retoque de las 5 fotos: piel, agua, producto y color</li><li>Archivos para revista, OOH, RRSS, digital y tiendas</li><li>Entrega del material en crudo</li></ul></div><div class="grp"><span class="k">Video</span><ul class="dots"><li>Edición de 3 cápsulas verticales y 2 compilados</li><li>Corrección de color</li><li>Música de librería con licencia</li><li>Diseño sonoro y mezcla</li><li>Gráficos 2D: textos en pantalla animados</li><li>Subtítulos</li></ul></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="block">
-  <div class="wrap">
-    <p class="seclabel">04 · Cronograma</p>
-    <h2 class="bigt">Cuatro semanas <span class="grad">desde la aprobación</span></h2>
-    <ol class="tl">
-      <li><span class="d">Semana 1</span><div><b>Preproducción</b><p>Scouting, plan de rodaje, vestuario y arte. Entornos con IA en el escenario 3. Guion del video a FV con Natura.</p></div></li>
-      <li><span class="d">Semana 2</span><div><b>Rodaje</b><p>Un día de fotos y video con el embajador.</p></div></li>
-      <li><span class="d">Semana 3</span><div><b>Fotos</b><p>Selección, retoque y entrega de las 5 fotos y del material en crudo.</p></div></li>
-      <li><span class="d">Semana 4</span><div><b>Videos</b><p>Entrega de las 3 cápsulas y los 2 compilados, con dos rondas de ajustes.</p></div></li>
-    </ol>
-  </div>
-</section>
 
 <section class="block block--tint">
   <div class="wide">
     <div class="price">
       <div>
-        <p class="seclabel">05 · Inversión</p>
+        <p class="seclabel">04 · Inversión</p>
         <h2 class="bigt">Shooting <span class="grad">Kaiak Aventura Intenso</span></h2>
         <div class="body-lg"><p>Los tres escenarios incluyen los mismos entregables: 5 fotos retocadas, fotos en crudo, 3 cápsulas tipo Reel y 2 compilados de tomas.</p></div>
       </div>
       <div class="calcs">
         <div class="calc">
           <span class="optk">Escenario 1 · Bogotá</span>
-          <div class="rowv"><span>Rodaje</span><b>1 día en cascada</b></div>
-          <div class="rowv"><span>Viaje</span><b>Ida y vuelta el mismo día</b></div>
+          <div class="rowv"><span>Rodaje</span><b>Hasta 3 días · 2 locaciones</b></div>
+          <div class="rowv"><span>Viaje</span><b>Ida y vuelta cada día</b></div>
           <div class="rowv total"><span>Total</span><b class="num">$66.000.000</b></div>
           <small>COP + IVA.</small>
         </div>
         <div class="calc">
           <span class="optk">Escenario 2 · Pereira</span>
-          <div class="rowv"><span>Rodaje</span><b>1 día en cascada</b></div>
+          <div class="rowv"><span>Rodaje</span><b>Hasta 3 días · 2 locaciones</b></div>
           <div class="rowv"><span>Viaje</span><b>Incluido</b></div>
           <div class="rowv total"><span>Total</span><b class="num">$52.000.000</b></div>
           <small>COP + IVA.</small>
         </div>
         <div class="calc">
           <span class="optk">Escenario 3 · Estudio + IA</span>
-          <div class="rowv"><span>Rodaje</span><b>1 día en estudio</b></div>
+          <div class="rowv"><span>Rodaje</span><b>Hasta 3 días en estudio</b></div>
           <div class="rowv"><span>Entornos</span><b>Selva y cascada con IA</b></div>
           <div class="rowv total"><span>Total</span><b class="num">$42.000.000</b></div>
           <small>COP + IVA.</small>
