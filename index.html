@@ -238,6 +238,10 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
 .play{position:absolute;left:50%;top:44%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:linear-gradient(96deg,var(--green-br),var(--blue-br));box-shadow:0 8px 24px rgba(14,27,52,.4);transition:transform .3s}
 .play::after{content:"";position:absolute;left:26px;top:20px;border-left:18px solid #0E1B34;border-top:12px solid transparent;border-bottom:12px solid transparent}
 .cell--yt:hover .play,.cell--yt:focus-visible .play{transform:scale(1.08)}
+.limits{margin-top:20px;padding:20px 22px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--green-br);border-radius:12px;display:grid;gap:10px;max-width:56ch}
+.limits p{font-size:14px;color:var(--muted);line-height:1.6}
+.limits p b{color:var(--ink)}
+.limits .dots{margin-top:0}
 .ba-cap{font-size:13px;color:var(--label);margin-top:10px;max-width:520px}
 /* desglose */
 .tbl-wrap{overflow-x:auto;margin-top:36px;background:#fff;border:1px solid var(--line);border-radius:14px}
@@ -390,6 +394,19 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
         <h3>Estudio en Bogotá con entornos en IA</h3>
         <p>El embajador se fotografía y se graba en estudio, sobre un set con roca, agua y rocío. La persona y el producto son reales. La selva, la cascada y la luz entre los árboles se hacen con IA y se integran en postproducción.</p>
         <p>Antes del rodaje se aprueban los entornos, para iluminar el estudio igual que la escena final.</p>
+        <div class="limits">
+          <span class="tk">Alcance en fotos y en video</span>
+          <p><b>Fotos:</b> el entorno con IA se integra en cualquier encuadre.</p>
+          <p><b>Video:</b> la IA tiene límites cuando la persona y el agua se mueven en la misma toma. Por eso los videos de este escenario se graban así:</p>
+          <ul class="dots">
+            <li>Cámara fija o con movimientos lentos y controlados.</li>
+            <li>Más poses que acciones: el embajador quieto o con movimientos cortos. Sin correr, saltar ni entrar al agua.</li>
+            <li>La cascada va de fondo. La persona no toca el agua generada con IA.</li>
+            <li>El rocío, el sudor y la piel mojada se hacen en el set, con atomizadores.</li>
+            <li>Planos cortos, de pocos segundos.</li>
+          </ul>
+          <p>El video de backstage se graba real en el estudio y no tiene estas limitaciones.</p>
+        </div>
         <span class="scen__price"><span>Total</span><b class="num">$42.000.000</b></span>
       </div>
       <div>
