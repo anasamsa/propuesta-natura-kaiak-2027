@@ -234,6 +234,10 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
 .cell--video{background:#000}
 .cell--video video{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#000}
 .vtag{position:absolute;left:12px;top:12px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:30px;background:rgba(14,27,52,.78);color:#fff;pointer-events:none}
+.cell--yt{display:block;color:#fff;text-decoration:none}
+.play{position:absolute;left:50%;top:44%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:linear-gradient(96deg,var(--green-br),var(--blue-br));box-shadow:0 8px 24px rgba(14,27,52,.4);transition:transform .3s}
+.play::after{content:"";position:absolute;left:26px;top:20px;border-left:18px solid #0E1B34;border-top:12px solid transparent;border-bottom:12px solid transparent}
+.cell--yt:hover .play,.cell--yt:focus-visible .play{transform:scale(1.08)}
 .ba-cap{font-size:13px;color:var(--label);margin-top:10px;max-width:520px}
 /* desglose */
 .tbl-wrap{overflow-x:auto;margin-top:36px;background:#fff;border:1px solid var(--line);border-radius:14px}
@@ -312,8 +316,8 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
 </section>
 <div class="bleed">
   <div class="cell cell--video"><video src="img/suzuki-sukimaticas.mp4" poster="img/suzuki-poster.jpg" controls playsinline preload="none" aria-label="Comercial Suzuki Sukimáticas producido por Samsa"></video><span class="vtag">Suzuki Sukimáticas · comercial 60 s</span></div>
-  <div class="cell"><img src="img/la-24.jpg" alt="Pareja en moto Suzuki V-Strom en una carretera de montaña."><div class="cap2"><b>Suzuki V-Strom</b><span>Comercial en carretera y montaña.</span></div></div>
-  <div class="cell"><img src="img/la-22.jpg" alt="Pareja sonriendo en un paisaje de montaña."><div class="cap2"><b>Rodaje en montaña</b><span>Talento en locación natural.</span></div></div>
+  <a class="cell cell--yt" href="https://www.youtube.com/watch?v=SzEba42Pkkk" target="_blank" rel="noopener"><img src="img/yt-SzEba42Pkkk.jpg" alt="Fotograma del comercial Suzuki V-Strom 250 producido por Samsa."><span class="play" aria-hidden="true"></span><div class="cap2"><b>Suzuki V-Strom 250</b><span>Comercial en carretera y montaña · ver video</span></div></a>
+  <a class="cell cell--yt" href="https://www.youtube.com/watch?v=5uE_DAiu0r0" target="_blank" rel="noopener"><img src="img/yt-5uE_DAiu0r0.jpg" alt="Fotograma del comercial Suzuki DR 150 producido por Samsa."><span class="play" aria-hidden="true"></span><div class="cap2"><b>Suzuki DR 150</b><span>Comercial en exteriores · ver video</span></div></a>
 </div>
 
 
