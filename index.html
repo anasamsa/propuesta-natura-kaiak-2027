@@ -204,6 +204,8 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
 .scen h3{font-size:clamp(24px,2.8vw,34px);font-weight:800;letter-spacing:-.015em;line-height:1.12;margin-top:8px}
 .scen__txt > p{font-size:16px;color:var(--muted);line-height:1.65;margin-top:14px;max-width:52ch}
 .scen__price{display:inline-flex;align-items:baseline;gap:10px;margin-top:20px;padding:10px 18px;border-radius:40px;background:var(--hero);color:#fff;font-weight:800;font-size:18px}
+.scen__price em{font-style:normal;font-size:13px;font-weight:700;color:#C3D0E4}
+.rowv .iva{font-size:14px;font-weight:700;color:#C3D0E4}
 .scen__price span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7FE0A0;font-weight:700}
 .locs{display:grid;gap:12px;min-width:0}
 .loc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:grid;gap:6px}
@@ -277,6 +279,9 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
 .grp .k{display:block;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--label);margin-bottom:4px}
 .grp .dots{margin-top:6px;gap:6px}
 @media (max-width:760px){.phase{grid-template-columns:1fr}}
+.scope{margin-top:22px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--green-br);border-radius:14px;padding:22px 26px;display:grid;gap:10px}
+.scope .dots li{font-size:15px}
+.scope .dots b{color:var(--ink)}
 .calcs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:clamp(26px,3vw,36px)}
 .price{grid-template-columns:1fr}
 .tl{list-style:none;margin:36px 0 0;padding:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
@@ -354,6 +359,14 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
       <div class="pill"><span class="pill__k num grad">2</span><h3>Compilados de tomas</h3><p>Material de apoyo editado y ordenado.</p>
         <ul class="dots"><li>Tomas de apoyo del backstage</li><li>Tomas de apoyo para contenido interno</li></ul></div>
     </div>
+    <div class="scope">
+      <span class="tk">Alcance</span>
+      <ul class="dots">
+        <li><b>Los 3 reels se graban en la locación de naturaleza.</b> El video a FV todavía no tiene guion; también se graba ahí.</li>
+        <li><b>Incluye las tomas de apoyo</b> del backstage y para contenido interno.</li>
+        <li><b>No incluye los honorarios del embajador.</b> Sí incluye su transporte, alimentación y vestuario.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -366,9 +379,9 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
       <div class="scen__txt">
         <span class="tk">Escenario 1</span>
         <h3>Cascada en los alrededores de Bogotá</h3>
-        <p>Rodaje en una cascada a menos de dos horas de Bogotá y en un estudio u hotel en la ciudad. El equipo y el embajador salen y vuelven cada día. La locación final se confirma en el scouting, según acceso para el equipo, permisos y luz.</p>
+        <p>Rodaje en una cascada a menos de dos horas de Bogotá. Los 3 reels se graban en esa locación de naturaleza. El equipo y el embajador salen y vuelven cada día. La locación final se confirma en el scouting, según acceso para el equipo, permisos y luz.</p>
         <p>El permiso de rodaje se acuerda con el lugar elegido.</p>
-                <span class="scen__price"><span>Total</span><b class="num">$95.000.000</b></span>
+                <span class="scen__price"><span>Total</span><b class="num">$97.000.000</b><em>+ IVA</em></span>
       </div>
       <div class="duo">
         <figure><img src="img/bogota-abuela-1.jpg" alt="Cascada de la Abuela: caída de agua entre musgo y vegetación densa."><figcaption><b>Cascada de la Abuela</b><span>Parque Ecológico Matarredonda, a 30 minutos de Bogotá.</span></figcaption></figure>
@@ -380,9 +393,9 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
       <div class="scen__txt">
         <span class="tk">Escenario 2</span>
         <h3>Cascada en Pereira</h3>
-        <p>Rodaje en el Eje Cafetero, con vegetación tropical más densa, y en un estudio u hotel de la zona. Producción con equipo local y equipo clave desde Bogotá. Incluye viaje del embajador, hospedaje y traslado hasta la cascada.</p>
+        <p>Rodaje en el Eje Cafetero, con vegetación tropical más densa. Los 3 reels se graban en esa locación de naturaleza. Producción con equipo local y equipo clave desde Bogotá. Incluye viaje del embajador, hospedaje y traslado hasta la cascada.</p>
         <p>El permiso de rodaje se acuerda con el lugar elegido.</p>
-        <span class="scen__price"><span>Total</span><b class="num">$83.000.000</b></span>
+        <span class="scen__price"><span>Total</span><b class="num">$78.800.000</b><em>+ IVA</em></span>
       </div>
       <div class="duo">
         <figure><img src="img/pereira-la-floresta.jpg" alt="Cascada alta y delgada entre vegetación densa, con un mirador de madera."><figcaption><b>Cascada La Floresta</b><span>Caída alta entre vegetación densa, con mirador de madera.</span></figcaption></figure>
@@ -410,7 +423,7 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
           <p>El video de backstage se graba real en el estudio y no tiene estas limitaciones.</p>
           <p class="note"><b>Nota:</b> en este escenario los guiones de los videos se adaptan a estas condiciones para que funcionen con IA. Por ejemplo, el video sensorial pasa de la subida a la montaña a planos más quietos del embajador en la roca y del producto.</p>
         </div>
-        <span class="scen__price"><span>Total</span><b class="num">$53.000.000</b></span>
+        <span class="scen__price"><span>Total</span><b class="num">$48.000.000</b><em>+ IVA</em></span>
       </div>
       <div>
         <div class="ba" id="ba" style="--pos:50%">
@@ -436,8 +449,8 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
         <div class="phase__b"><div class="grp"><span class="k">Equipo humano</span><ul class="dots"><li>Productor general</li></ul></div><div class="grp"><span class="k">Incluye</span><ul class="dots"><li>Scouting y visita técnica</li><li>Permisos de locación</li><li>Plan de rodaje y call sheet</li><li>Guion visual de los videos</li><li>Propuesta de vestuario, arte, maquillaje y peinado</li></ul></div></div>
       </div>
       <div class="phase">
-        <div class="phase__h"><span class="tk">Fase 2</span><h3>Producción</h3><span class="dur">3 días de rodaje</span><p>Hasta 2 locaciones: por ejemplo, la cascada y un estudio u hotel para las fotos de aplicación y el video de backstage.</p></div>
-        <div class="phase__b"><div class="grp"><span class="k">Equipo humano</span><ul class="dots"><li>Director general</li><li>Productor de campo</li><li>Fotógrafo</li><li>Asistente de fotografía</li><li>Director de fotografía</li><li>Camarógrafo</li><li>Asistente de cámara</li><li>Gaffer</li><li>Eléctrico</li><li>Director de arte</li><li>Asistente de arte</li><li>Vestuarista</li><li>Maquillador</li><li>Peinador</li><li>Camarógrafo de backstage</li><li>Manejo de material (DIT)</li></ul></div><div class="grp"><span class="k">Equipo técnico</span><ul class="dots"><li>Cámara de cine 4K con lentes de cine</li><li>Cámara de foto de alta resolución con lentes fijos</li><li>Estabilizador y drone</li><li>Iluminación, reflectores, difusores y banderas</li><li>Atomizadores y niebla para el rocío</li><li>Monitoreo</li></ul></div><div class="grp"><span class="k">Logística</span><ul class="dots"><li>Transporte del equipo humano y técnico</li><li>Transporte del embajador</li><li>Alimentación e hidratación</li><li>Almacenamiento y respaldo del material</li></ul></div></div>
+        <div class="phase__h"><span class="tk">Fase 2</span><h3>Producción</h3><span class="dur">2 días de rodaje</span><p>Hasta 2 locaciones. Los 3 reels se graban en la locación de naturaleza.</p></div>
+        <div class="phase__b"><div class="grp"><span class="k">Equipo humano</span><ul class="dots"><li>Director general</li><li>Productor de campo</li><li>Fotógrafo</li><li>Asistente de fotografía</li><li>Director de fotografía</li><li>Camarógrafo</li><li>Asistente de cámara</li><li>Gaffer</li><li>Eléctrico</li><li>Director de arte</li><li>Asistente de arte</li><li>Vestuarista</li><li>Maquillador</li><li>Peinador</li><li>Camarógrafo de backstage</li><li>Manejo de material (DIT)</li></ul></div><div class="grp"><span class="k">Equipo técnico</span><ul class="dots"><li>Cámara de cine 4K con lentes de cine</li><li>Cámara de foto de alta resolución con lentes fijos</li><li>Estabilizador y drone</li><li>Iluminación, reflectores, difusores y banderas</li><li>Atomizadores y niebla para el rocío</li><li>Monitoreo</li></ul></div><div class="grp"><span class="k">Logística</span><ul class="dots"><li>Transporte del equipo humano y técnico</li><li>Transporte del embajador</li><li>Alimentación e hidratación del equipo y del embajador</li><li>Vestuario del embajador</li><li>Almacenamiento y respaldo del material</li></ul></div></div>
       </div>
       <div class="phase">
         <div class="phase__h"><span class="tk">Fase 3</span><h3>Postproducción</h3><span class="dur">8 días hábiles</span></div>
@@ -459,31 +472,31 @@ tfoot td{border-bottom:0;font-weight:800;background:var(--tint)}
       <div class="calcs">
         <div class="calc">
           <span class="optk">Escenario 1 · Bogotá</span>
-          <div class="rowv"><span>Rodaje</span><b>3 días · hasta 2 locaciones</b></div>
+          <div class="rowv"><span>Rodaje</span><b>2 días · hasta 2 locaciones</b></div>
           <div class="rowv"><span>Viaje</span><b>Ida y vuelta cada día</b></div>
-          <div class="rowv total"><span>Total</span><b class="num">$95.000.000</b></div>
-          <small>COP + IVA.</small>
+          <div class="rowv total"><span>Total</span><b class="num">$97.000.000 <small class="iva">+ IVA</small></b></div>
+          <small>COP. El IVA se suma al valor.</small>
         </div>
         <div class="calc">
           <span class="optk">Escenario 2 · Pereira</span>
-          <div class="rowv"><span>Rodaje</span><b>3 días · hasta 2 locaciones</b></div>
+          <div class="rowv"><span>Rodaje</span><b>2 días · hasta 2 locaciones</b></div>
           <div class="rowv"><span>Viaje</span><b>Incluido</b></div>
-          <div class="rowv total"><span>Total</span><b class="num">$83.000.000</b></div>
-          <small>COP + IVA.</small>
+          <div class="rowv total"><span>Total</span><b class="num">$78.800.000 <small class="iva">+ IVA</small></b></div>
+          <small>COP. El IVA se suma al valor.</small>
         </div>
         <div class="calc">
           <span class="optk">Escenario 3 · Estudio + IA</span>
           <div class="rowv"><span>Rodaje</span><b>1 día en estudio</b></div>
           <div class="rowv"><span>Entornos</span><b>Selva y cascada con IA</b></div>
-          <div class="rowv total"><span>Total</span><b class="num">$53.000.000</b></div>
-          <small>COP + IVA.</small>
+          <div class="rowv total"><span>Total</span><b class="num">$48.000.000 <small class="iva">+ IVA</small></b></div>
+          <small>COP. El IVA se suma al valor.</small>
         </div>
       </div>
     </div>
     <div class="boxes">
       <div class="box box--cond"><span class="k">Condiciones</span><ul>
         <li>50% al aprobar y 50% a la entrega final.</li>
-        <li>El embajador, sus honorarios y derechos de imagen están a cargo de Natura.</li>
+        <li>Los honorarios y derechos de imagen del embajador están a cargo de Natura. Su transporte, alimentación y vestuario están incluidos.</li>
         <li>Dos rondas de ajustes en retoque y en edición.</li>
         <li>Cesión de derechos del material para los usos del brief.</li>
         <li>Para arrancar: escenario elegido, fecha de rodaje y frascos de producto.</li>
